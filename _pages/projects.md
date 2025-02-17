@@ -6,8 +6,8 @@ permalink: /projects/
 
 # My Projects 🚀
 
-## Groq AI & XAI  
-Working on **AI acceleration chips** for **real-time inference**.
+## 1️⃣ **Groq AI & XAI**
+Working on next-gen AI acceleration chips for **real-time inference**.
 
-## Data Center Automation  
-Building automation scripts to improve server efficiency.
+## 2️⃣ **Data Center Automation**
+Building automation scripts to **improve server efficiency**.

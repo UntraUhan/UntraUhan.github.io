@@ -1,11 +1,10 @@
-
 title: "Zhargal Bubeev | Data Center & AI"
 description: "Portfolio of Zhargal Bubeev, AI & Data Center Technician"
 author: "Zhargal Bubeev"
 baseurl: ""
-url: "https://UntraUhan.github.io"
+url: "https://untrauhan.github.io"
 
-theme: minima
+remote_theme: jekyll-theme-hacker
 paginate: 5
 paginate_path: "/blog/page:num/"
 
@@ -13,3 +12,8 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-feed
+
+collections:
+  pages:
+    output: true
+    permalink: /:path/

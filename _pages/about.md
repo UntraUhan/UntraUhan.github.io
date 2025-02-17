@@ -4,6 +4,12 @@ title: About Me
 permalink: /about/
 ---
 
-# About Me
+# Zhargal Bubeev – Data Center Technician & AI Enthusiast
 
-Hi! My name is **Zhargal Bubeev**, and I am a **Data Center Technician** with a passion for AI and hardware.
+Hello! My name is **Zhargal Bubeev**, and I am an experienced **Data Center Technician** with a background in **hardware, networking, and AI infrastructure**.
+
+## 🛠 Skills:
+- **Data Center Operations**: Installing, maintaining, and troubleshooting servers.
+- **AI & Hardware**: Working with GPUs, AI chips, and cooling systems.
+- **Networking**: Configuring and maintaining fiber optic networks.
+- **Technical Support**: Windows, Linux, and cloud services (AWS, Azure).
