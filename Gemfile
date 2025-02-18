@@ -1,26 +1,11 @@
 source "https://rubygems.org"
 
-# 🔹 Поддержка GitHub Pages (автоматически ставит нужные версии Jekyll и Minima)
-gem "github-pages", group: :jekyll_plugins
+gem "github-pages", group: :jekyll_plugins  # ✅ GitHub Pages автоматически управляет Jekyll
 
-# 🔹 Дополнительные плагины Jekyll
+# 🔹 Дополнительные плагины (они совместимы с GitHub Pages)
 group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.12"        # RSS-фид
-  gem "jekyll-sitemap"                # Sitemap.xml для SEO
-  gem "jekyll-paginate"               # Пагинация
-  gem "jekyll-seo-tag"                # SEO-оптимизация
+  gem "jekyll-feed"        # RSS-лента
+  gem "jekyll-sitemap"     # XML-карта сайта
+  gem "jekyll-paginate"    # Пагинация
+  gem "jekyll-remote-theme" # ✅ Нужно для remote_theme!
 end
-
-# 🔹 Поддержка часовых зон на Windows
-platforms :mingw, :x64_mingw, :mswin, :jruby do
-  gem "tzinfo", ">= 1", "< 3"
-  gem "tzinfo-data"
-end
-
-# 🔹 Улучшение работы Jekyll на Windows
-gem "wdm", "~> 0.1", platforms: [:mingw, :x64_mingw, :mswin]
-
-# 🔹 Поддержка HTTP в JRuby
-gem "http_parser.rb", "~> 0.6.0", platforms: [:jruby]
-
-
