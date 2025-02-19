@@ -31,7 +31,7 @@ jobs:
         run: bundle exec jekyll build
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4  # ✅ ОБНОВЛЕНО
         with:
           name: jekyll-site
           path: _site
