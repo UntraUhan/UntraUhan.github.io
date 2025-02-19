@@ -1,14 +1,17 @@
-
 source "https://rubygems.org"
 
-gem "github-pages", group: :jekyll_plugins  # Используем совместимую версию Jekyll для GitHub Pages
-gem "jekyll-theme-hacker"                   # Тема для сайта
+# 🔹 GitHub Pages (автоматически подтягивает совместимые зависимости)
+gem "github-pages", group: :jekyll_plugins
 
-# 🔹 Дополнительные плагины Jekyll
+# 🔹 Дополнительные плагины
 group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.12"       # RSS-фид
-  gem "jekyll-sitemap"               # Sitemap.xml
-  gem "jekyll-paginate"              # Пагинация
-  gem "jekyll-seo-tag"               # SEO-оптимизация
-  gem "jekyll-remote-theme"          # Позволяет использовать `remote_theme`
+  gem "jekyll-feed"
+  gem "jekyll-sitemap"
+  gem "jekyll-paginate"
+  gem "jekyll-seo-tag"
+end
+
+# Ускорение работы Jekyll на Windows
+platforms :mingw, :x64_mingw, :mswin do
+  gem "wdm", "~> 0.1"
 end

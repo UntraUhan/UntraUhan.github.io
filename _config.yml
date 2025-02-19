@@ -1,10 +1,12 @@
 title: "Zhargal Bubeev | Data Center & AI"
 description: "Portfolio of Zhargal Bubeev, AI & Data Center Technician"
 author: "Zhargal Bubeev"
-
+baseurl: ""
 url: "https://untrauhan.github.io"
 
-remote_theme: pages-themes/hacker@v0.2.0
+# Заменяем на поддерживаемую GitHub Pages тему
+remote_theme: pages-themes/cayman@v0.2.0
+
 paginate: 5
 paginate_path: "/blog/page:num/"
 
@@ -12,7 +14,6 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-feed
-  - jekyll-remote-theme  # ✅ Добавляем поддержку remote_theme!
 
 collections:
   pages:
