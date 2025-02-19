@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-# 🔹 GitHub Pages (автоматически подтягивает совместимые зависимости)
+# Поддержка GitHub Pages
 gem "github-pages", group: :jekyll_plugins
 
 # 🔹 Дополнительные плагины
@@ -15,3 +15,4 @@ end
 platforms :mingw, :x64_mingw, :mswin do
   gem "wdm", "~> 0.1"
 end
+"""

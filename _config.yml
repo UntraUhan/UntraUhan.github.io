@@ -4,7 +4,7 @@ author: "Zhargal Bubeev"
 baseurl: ""
 url: "https://untrauhan.github.io"
 
-# Заменяем на поддерживаемую GitHub Pages тему
+# Используем поддерживаемую тему GitHub Pages
 remote_theme: pages-themes/cayman@v0.2.0
 
 paginate: 5
@@ -14,8 +14,10 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-feed
+  - jekyll-seo-tag
 
 collections:
   pages:
     output: true
     permalink: /:path/
+"""
