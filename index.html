@@ -1,22 +1,29 @@
----
-layout: default
-title: Home
----
-
-<h1>Welcome to My Blog</h1>
-
-{% for post in paginator.posts %}
-  <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-  <p>{{ post.excerpt }}</p>
-{% endfor %}
-
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}">Previous</a>
-  {% endif %}
-
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}">Next</a>
-  {% endif %}
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zhargal Bubeev | Data Center & AI</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Zhargal Bubeev's Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="certifications.html">Certifications</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <p>This is a personal portfolio website showcasing projects and experience in AI & Data Centers.</p>
+    </main>
+    <footer>
+        <p>© 2025 Zhargal Bubeev</p>
+    </footer>
+</body>
+</html>
 
