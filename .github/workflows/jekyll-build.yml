@@ -25,9 +25,15 @@ jobs:
       - name: Install dependencies
         run: |
           gem install bundler
-          bundle install --clean --jobs 4 --retry 3
+          bundle install --jobs 4 --retry 3
 
       - name: Build Jekyll site
         run: bundle exec jekyll build
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: jekyll-site
+          path: _site
 
 
