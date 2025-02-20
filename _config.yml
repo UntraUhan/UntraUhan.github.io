@@ -1,38 +1,21 @@
-name: Jekyll Build
+title: "Zhargal Bubeev | Data Center & AI"
+description: "Portfolio of Zhargal Bubeev, AI & Data Center Technician"
+author: "Zhargal Bubeev"
+baseurl: ""
+url: "https://untrauhan.github.io"
 
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+theme: jekyll-theme-cayman
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
+paginate: 5
+paginate_path: "/blog/page:num/"
 
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
 
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.1'
-          bundler-cache: true
+collections:
+  pages:
+    output: true
+    permalink: /:path/
 
-      - name: Install dependencies
-        run: |
-          gem install bundler --conservative
-          bundle config set --local path 'vendor/bundle'
-          bundle install --jobs 4 --retry 3
-
-      - name: Build Jekyll site
-        run: bundle exec jekyll build
-
-      - name: Upload artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: jekyll-site
-          path: _site
