@@ -4,7 +4,7 @@ author: "Zhargal Bubeev"
 baseurl: ""
 url: "https://untrauhan.github.io"
 
-remote_theme: pages-themes/hacker@v0.2.0
+theme: jekyll-theme-hacker
 paginate: 5
 paginate_path: "/blog/page:num/"
 

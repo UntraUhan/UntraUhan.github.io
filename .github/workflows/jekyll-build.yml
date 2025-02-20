@@ -20,7 +20,7 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.1'
-          bundler-cache: false  # Отключаем кэш Bundler
+          bundler-cache: true
 
       - name: Install dependencies
         run: |
@@ -36,4 +36,5 @@ jobs:
         with:
           name: jekyll-site
           path: _site
+
 

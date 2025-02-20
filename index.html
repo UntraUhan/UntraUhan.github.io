@@ -1,13 +1,22 @@
 ---
 layout: default
-title: "Zhargal Bubeev | Data Center & AI"
+title: Home
 ---
 
-<h1>Welcome to My Portfolio 🚀</h1>
-<ul>
-    <li><a href="/about/">About Me</a></li>
-    <li><a href="/projects/">Projects</a></li>
-    <li><a href="/certifications/">Certifications</a></li>
-    <li><a href="/contact/">Contact</a></li>
-</ul>
+<h1>Welcome to My Blog</h1>
+
+{% for post in paginator.posts %}
+  <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+  <p>{{ post.excerpt }}</p>
+{% endfor %}
+
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}">Previous</a>
+  {% endif %}
+
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}">Next</a>
+  {% endif %}
+</div>
 
