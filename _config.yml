@@ -4,9 +4,7 @@ author: "Zhargal Bubeev"
 baseurl: ""
 url: "https://untrauhan.github.io"
 
-# Укажи тему Jekyll
-theme: jekyll-theme-cayman  # Вместо jekyll-theme-hacker
-
+theme: jekyll-theme-cayman
 paginate: 5
 paginate_path: "/blog/page:num/"
 

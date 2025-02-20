@@ -4,8 +4,7 @@ title: Contact
 permalink: /contact/
 ---
 
-# Contact Me 📩
+# 📞 Contact Me
 
-- **LinkedIn**: [linkedin.com/in/zhargal-bubeev](https://www.linkedin.com/in/zhargal-bubeev)
-- **GitHub**: [github.com/UntraUhan](https://github.com/UntraUhan)
-- **Email**: barnili1997@gmail.com
+- 📧 Email: barnili1997@gmail.com
+- 💼 [LinkedIn](https://www.linkedin.com/in/zhargal-bubeev)

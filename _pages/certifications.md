@@ -4,11 +4,8 @@ title: Certifications
 permalink: /certifications/
 ---
 
-# My Certifications 🏅
+# 📜 Certifications
 
-- **Google IT Support Professional Certificate**
-- **Microsoft Windows OS Certification**
-- **Cisco Networking Basics**
-- **OSHA Safety Certification**
-- **Tower Climbing & Fiber Optic Installation**
-- **Red Cross First Aid Certification**
+- **Google IT Support Specialist** – Credential ID: UXY10D701LJC
+- **Google System Administration** – Credential ID: MGTZBV7SX7EB
+- **Cisco Networking Basics** – Credential ID: BJNGO8YIVYMX
